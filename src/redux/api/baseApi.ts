@@ -6,7 +6,7 @@ import { RootState } from "../store";
 export const baseApi = createApi({
   reducerPath: "baseApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "suju-flavor-hub-server.vercel.app/api",
+    baseUrl: "suju-flavor-hub-server.vercel.app",
     prepareHeaders: (headers, { getState }) => {
       const token = (getState() as RootState).auth.token;
 
